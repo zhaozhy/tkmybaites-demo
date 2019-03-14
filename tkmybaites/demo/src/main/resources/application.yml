@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql:///testdb?useUnicode=false&characterEncoding=utf8
+    username: root
+    password: MYSQLmysql123456
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.example.boot.demo.domain
+mapper:
+  not-empty: true
+  identity: MYSQL
+server:
+  port: 8091
